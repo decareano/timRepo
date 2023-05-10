@@ -33,6 +33,7 @@ public class LargestPrime {
           if (number % i == 0) {
              number /= i;
              i--; 
+             System.out.println(number);
              
           }
        

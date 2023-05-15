@@ -31,9 +31,16 @@ public class DiagonalStar{
                 //what happens is: while column is not equal number
                 //by using an else clause I ADD the EMPTY spaces and 
                 //then when column IS equal to number I add the three!!!!
+             } else if (column == row) {
+                System.out.print("4");
+             } else if (column == number - 1) {
+                System.out.print("5");
+             } else if (column == number - 1 - row) {
+                System.out.print("5");
              } else {
                 System.out.print(" ");
              }
+             
              
            }
            System.out.println();

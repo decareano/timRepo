@@ -18,16 +18,25 @@ public class LargestPrime {
           return -1;
        }
    
-       int i = 2;
-       while (i  < number) {
-          if (number % i == 0) {
-          number /= i;
+       //int i = 2;
+       //while (i  < number) {
+          //if (number % i == 0) {
+          //number /= i;
              //if (number / 1 == 2) {
                  //return i;
             // }
-          continue;
+          //continue;
+          //}
+          //i++;
+       //}
+       for (int i = 2; i <= number/2; i++) {
+          if (number % i == 0) {
+             number /= i;
+             i--; 
+             System.out.println(number);
+             
           }
-          i++;
+       
        }
        
        return number;

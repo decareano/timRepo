@@ -1,0 +1,22 @@
+//https://www.youtube.com/watch?v=G0X-7mzR27w
+
+// good explanation above
+public class Edureka {  
+    public static void pyramidPattern(int n) {  
+        for (int i=1; i<=n; i++) { 
+                for (int j=1; j<=n-i;j++) { 
+                   System.out.print("E"); 
+                } 
+        
+        for (int j=1; j<=i; j++) {
+             System.out.print("* ");
+        }
+        System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+     
+        
+        pyramidPattern(5); 
+    } 
+}

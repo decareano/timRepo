@@ -1,0 +1,30 @@
+public class Edureka {  
+    public static void pyramidPattern(int n) {  
+        for (int i=1; i<=n; i++) { 
+                for (int j=1; j<=n-i;j++) { 
+                   System.out.print(" "); 
+                } 
+        
+        for (int j=1; j<=i; j++) {
+             System.out.print("* ");
+        }
+        System.out.println();
+        }
+        for (int i=1; i<n; i++) { //I was using i<n-1 instead of i<n
+                for (int j=1; j<=i; j++) { 
+                   System.out.print(" "); 
+                } 
+        
+        for (int j=1; j<=n-i;j++) {
+             System.out.print("* ");
+        }
+           
+        System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+     
+        
+        pyramidPattern(5); 
+    } 
+}

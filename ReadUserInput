@@ -19,6 +19,8 @@ public class ReadUserInput {
                     sum += number;
                 } catch (NumberFormatException badUserData) {
                     System.out.println("Invalid number");
+                    //below code is not efficient. it should be done with a while loop, but I originally did it with
+                    // a for loop and wanted to keep it
                     --i;
                 }
                  

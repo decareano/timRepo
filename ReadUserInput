@@ -1,0 +1,29 @@
+package com.mycompany.timrepo;
+import java.util.Scanner;
+/**
+ *
+ * @author marcelogobelli
+ */
+public class ReadUserInput {
+    public static void main(String[] args) {
+      
+      
+      int sum = 0;
+      //int num = 0;
+      for (int i=1; i<=5; i++) {
+          System.out.println("Enter number # " + i + ":");
+          Scanner in = new Scanner(System.in);
+          String nextNumber = in.nextLine();
+                try {
+                    int number = Integer.parseInt(nextNumber);
+                    sum += number;
+                } catch (NumberFormatException badUserData) {
+                    System.out.println("Invalid number");
+                    --i;
+                }
+                 
+      }
+      System.out.println("The sum of the 5 numbers = " + sum);
+      
+    }
+}
